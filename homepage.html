@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rosewood Media Explorer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="plex-dashboard">
+    <!-- Navigation Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">🍿 ROSEWOOD PLACE</div>
+      <nav class="sidebar-nav">
+        <div class="nav-section">Library</div>
+        <button class="nav-btn active" id="btnHome">🏠 Home Discovery</button>
+        <button class="nav-btn" id="btnMovies">🎬 Movies</button>
+        <button class="nav-btn" id="btnShows">📺 TV Shows</button>
+      </nav>
+    </aside>
+
+    <!-- Content Screen Frame -->
+    <main class="main-content">
+      <!-- Top Utility Action Bar -->
+      <header class="action-bar">
+        <div class="breadcrumb-container" id="breadcrumbs">
+          <!-- Populated by JS Engine -->
+        </div>
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search titles, actors, genres...">
+        </div>
+      </header>
+
+      <!-- Media Catalog Output Wrapper -->
+      <section class="catalog-viewport">
+        <div class="plex-grid" id="mediaGrid">
+          <!-- Cards populated by JS Engine -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Cinematic Theater Sidebar Component -->
+    <section class="theater-panel" id="theaterPanel">
+      <div class="player-wrapper">
+        <video id="mainVideoPlayer" controls>
+          <source id="videoSource" src="" type="video/mp4">
+        </video>
+      </div>
+      <div class="meta-card">
+        <span class="badge" id="metaType">4K ULTRA</span>
+        <h2 id="metaTitle">Select a Title</h2>
+        <p class="summary" id="metaPlot">Click any media poster or movie file from your catalog grid to view details and start streaming instantly.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
